@@ -52,7 +52,7 @@ body {
 	height: 500px;
 	background: rgba(150, 50, 100, .3);
 	position: absolute;
-	top: 25%;
+	top: 320px;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
