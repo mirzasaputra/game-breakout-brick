@@ -27,7 +27,14 @@ const scoreDisplay = document.querySelector(".high-score");
 const buttonLeft = document.querySelector('.button-left');
 const buttonRight = document.querySelector('.button-right');
 const btnReset = document.querySelector('.reset');
+const btnPlay = document.querySelector('.play');
 var  highscore = parseInt(localStorage.getItem("highScore"));
+
+$('.play').click(function(){
+	$('.overlay').addClass('hide');
+	generateBricks();
+	draw();
+})
 
 function generateBricks(){
 	for(var c=0;c<brickColumnCount;c++){
@@ -165,9 +172,6 @@ function reset(){
 	paddleX = canvas.width / 2 - paddleWidth / 2;
 	rightPressed = false;
 	leftPressed = false;
-	
-	paddle();
-	ball();
 }
 
 function draw(){
@@ -213,6 +217,3 @@ function levelUp(){
 		generateBricks();
 	}
 }
-
-generateBricks();
-draw();

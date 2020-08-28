@@ -45,3 +45,51 @@ body {
 	background: #caa0f5;
 	color: #230c33;
 }
+
+.overlay {
+	display: block;
+	width: 500px;
+	height: 500px;
+	background: rgba(150, 50, 100, .3);
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-tranform: translate(-50%, -50%);
+	border-radius: 5px;
+}
+
+.play {
+	padding: 20px 25px;
+	margin: 25px auto;
+	width: 90px;
+	background: #330c33;
+	border: 0;
+	border-radius: 5px;
+}
+
+.overlay h3 {
+	margin-top: 25%;
+}
+
+.overlay h3, .overlay p {
+	color: #230c33;
+}
+
+.hide {
+	opacity: 0;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+}
+
+.show {
+	opacity: 1;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+}
