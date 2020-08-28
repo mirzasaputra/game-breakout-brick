@@ -52,12 +52,12 @@ body {
 	height: 500px;
 	background: rgba(150, 50, 100, .3);
 	position: absolute;
-	top: 320px;
+	top: 70px;
 	left: 50%;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-o-tranform: translate(-50%, -50%);
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-o-tranform: translate(-50%, 0);
 	border-radius: 5px;
 }
 
