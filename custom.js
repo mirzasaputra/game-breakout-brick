@@ -30,6 +30,16 @@ const btnReset = document.querySelector('.reset');
 const btnPlay = document.querySelector('.play');
 var  highscore = parseInt(localStorage.getItem("highScore"));
 
+document.addEventListener('mousemove', mouseHandler);
+
+function mouseHandler(e){
+	var relativeX = e.clientX - canvas.offsetLeft;
+	if(relativeX > 0 + paddleWidth / 2 && relativeX < canvas.width * paddleWidth / 2){
+		paddleX = relativeX - paddleWidth / 2;
+		$('.high-score').html(e.clientX);
+	}
+}
+
 $('.play').click(function(){
 	$('.overlay').addClass('hide');
 	generateBricks();
