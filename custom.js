@@ -212,6 +212,8 @@ function draw(){
 	requestAnimationFrame(draw);
 }
 
+var gameLevelUp = false;
+
 function levelUp(){
 	if(score % 15 == 0 && score != 0){
 		generateBricks();
